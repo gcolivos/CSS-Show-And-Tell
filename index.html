@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Differences between PX, EM, and REM
+    </header>
+    <H2>Why is this important?</H2>
+    <p>When creating your CSS property dimensions, you can choose to format it in one of three ways:</p>
+    <ul>
+        <li>"px" (for example, font-size=12px or padding:5px)</li>
+        <li>"rem" (for example, padding:2rem)</li>
+        <li>"em" (for example, padding:2em)</li>
+    </ul>
+
+    <div>
+        <H2>Using Pixels (px)</H2>
+        <p> When you use pixels as a number, you are literally telling the DOM how many pixel lengths you require for the size or width of an element.</p>
+        <ul>
+            <li>These are static numbers, they do not depend on anything else on the page.</li>
+            <li>There are a finite number of these units that will fit on any display, no matter how big or small.</li>
+        </ul>
+    <div class="px">
+        This box has width:100px, height:100px, and margin:10px
+    </div>
+    </div>
+    <div>
+        <H2>Using REM (rem)</H2>
+        <p> When you use rem as a number, you are telling the DOM what % of the font-size of the html you want.</p>
+        <ul>
+            <li>This is relative, where 1 em = whatever the font size is, # of px.</li>
+            <li>For example, the font-size of the html of this page is 20px.</li>
+        </ul>
+    <div class="rem">
+        This box has width:10rem, height:10rem, and margin:1rem
+    </div>
+    </div>
+    <div id="emBigFont">
+            <H2>Using EM (em)</H2>
+            <p> When you use em as a number, you are telling the DOM what % of the font-size of the CURRENT ELEMENT you want.</p>
+            <ul>
+                <li>This is relative, where 1 em = whatever the font size is of that element, # of px.</li>
+                <li>For example, the font-size of THIS PARTICULAR DIV of this page is 40px.</li>
+            </ul>
+        <div class="em">
+            width:5em, height:5em, margin:0.5em
+        </div>
+        </div>
+<p>So, one more time...</p>
+<div class="px">Width:200px</div>
+<div class="rem">Width: 10rem</div>
+<div class="em" id="emBigFont">Width: 5em</div>
+
+<p>And that is how px, rem, and em work for widths. The end.</p>
+</html>

@@ -1,0 +1,54 @@
+header{
+    color:red;
+    font-size: 40px;
+    text-align:center;
+}
+
+img{
+    float:left;
+    padding: 0px 20px 0px 0px;
+}
+
+html{
+    font-size: 20px;
+}
+
+.px{
+    float: center;
+    position: relative;
+    left: 400px;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background:red;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rem{
+    float: center;
+    position: relative;
+    left: 400px;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    background:blue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#emBigFont{
+    font-size: 40px;
+}
+
+.em{
+    float: center;
+    position: relative;
+    left: 400px;
+    width: 5em;
+    height: 5em;
+    margin: 0.5em;
+    background:green;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
